@@ -1,0 +1,23 @@
+.container > .grid {
+    border: solid black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas: 
+    "header header header"
+    "body body body"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+.body {
+    grid-area: body;
+}
+.footer {
+    grid-area: footer;
+}
