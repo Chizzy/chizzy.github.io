@@ -6,7 +6,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas: 
     "header header header"
     "body body body"
@@ -38,7 +38,39 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 h3 {
     color: deeppink;
     font-size: 25px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* PARALLAX STUFF */
+.para {
+    background: url(images/the_masquerade.jpg) 100% fixed;
+}
+.para2 {
+    background: url(images/freshiam.jpg) 100% fixed;
+}
+.para3 {
+    background: url(images/topshop.jpg) 100% fixed;
+}
+.para4 {
+    background: url(images/pwg.jpg) 100% fixed;
+}
+.parainner {
+    padding: 300px;
+}
+.space {
+    padding: 500px;
 }
