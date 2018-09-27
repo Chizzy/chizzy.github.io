@@ -4,6 +4,7 @@
 
 .container {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 500px 100px;
     grid-template-areas: 
@@ -14,10 +15,30 @@
 
 .header {
     grid-area: header;
+    font-family: 'Chicle', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/coffee.gif);
 }
 .body {
     grid-area: body;
+    font-family: 'Kodchasan', sans-serif;
 }
 .footer {
     grid-area: footer;
+    font-family: 'Chicle', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: deeppink;
+    font-size: 60px;
+}
+
+h3 {
+    color: deeppink;
+    font-size: 25px;
 }
